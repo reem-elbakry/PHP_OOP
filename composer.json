@@ -1,0 +1,15 @@
+{
+  "name": "reem/app",
+  "autoload": {
+    "psr-4": {
+      "app\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "reem-elbakry",
+      "email": "reemelbakry95@gmail.com"
+    }
+  ],
+  "require": {}
+}

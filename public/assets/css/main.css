@@ -1,0 +1,29 @@
+.colored-text {
+  color: #fd7e14;
+}
+
+button.btn,
+a.btn {
+  border: none;
+  border-radius: 7px;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button.btn:hover,
+a.btn:hover {
+  border: 0.5px solid #fd7e14;
+  color: #fd7e14;
+}
+
+#DVD,
+#Book,
+#Furniture {
+  display: none;
+}
+
+.validator {
+  color: red;
+  font-size: 0.775em;
+  display: none;
+}
