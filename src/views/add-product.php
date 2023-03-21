@@ -29,20 +29,24 @@
             <label for="sku" class="form-label">SKU</label>
             <input type="text" id="sku" name="sku" class="form-control" />
             <p id="skuValidator" class="validator">SKU is required!</p>
+            <p id="skuValidator1" class="validator">only chars and numbers are valid! [JVC200124]</p>
+            <p id="skuValidator2" class="validator2"><?= $error ?? null ?></p>
           </div>
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" id="name" name="name" class="form-control" />
             <p id="nameValidator" class="validator">Name is required!</p>
+            <p id="nameValidator1" class="validator">Only chars are valid! [Peace and War]</p>
           </div>
           <div class="mb-3">
             <label for="price" class="form-label">Price ($)</label>
             <input type="text" id="price" name="price" class="form-control" />
             <p id="priceValidator" class="validator">Price is required!</p>
+            <p id="priceValidator1" class="validator">Only numbers are valid! [2000]</p>
           </div>
           <div class="mb-3">
-            <label for="product_type" class="form-label">Type Switcher</label>
-            <select name="product_type" id="product_type">
+            <label for="productType" class="form-label">Type Switcher</label>
+            <select name="product_type" id="productType">
               <option value=""></option>
               <option value="DVD">DVD</option>
               <option value="Book">Book</option>
@@ -57,6 +61,7 @@
               <label for="size" class="form-label">Size (MB)</label>
               <input type="text" id="size" name="size" class="form-control" />
               <p id="sizeValidator" class="validator">Size is required!</p>
+              <p id="sizeValidator1" class="validator">Only numbers are valid!</p>
               <div class="form-text">Please, provide size in MB.</div>
             </div>
           </div>
@@ -70,11 +75,13 @@
                 class="form-control"
               />
               <p id="heightValidator" class="validator">Height is required!</p>
+              <p id="heightValidator1" class="validator">Only numbers are valid!</p>
             </div>
             <div class="mb-3">
               <label for="width" class="form-label">Width (CM)</label>
               <input type="text" id="width" name="width" class="form-control" />
               <p id="widthValidator" class="validator">Width is required!</p>
+              <p id="widthValidator1" class="validator">Only numbers are valid!</p>              
             </div>
             <div class="mb-3">
               <label for="length" class="form-label">Length (CM)</label>
@@ -85,6 +92,7 @@
                 class="form-control"
               />
               <p id="lengthValidator" class="validator">Length is required!</p>
+              <p id="lengthValidator1" class="validator">Only numbers are valid!</p>
               <div class="form-text">
                 Please, provide dimensions in HxWxL format.
               </div>
@@ -100,6 +108,7 @@
                 class="form-control"
               />
               <p id="weightValidator" class="validator">Weight is required!</p>
+              <p id="weightValidator1" class="validator">Only numbers are valid!</p>
               <div class="form-text">Please, provide Weight in KG.</div>
             </div>
           </div>

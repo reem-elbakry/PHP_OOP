@@ -27,3 +27,8 @@ a.btn:hover {
   font-size: 0.775em;
   display: none;
 }
+
+.validator2 {
+  color: red;
+  font-size: 0.775em;
+}

@@ -46,9 +46,15 @@ class ProductController extends Controller {
         $data = $request->getBody();
 
         $product  = new Product();
-        $product->store($data);
 
-        Response::redirect("/");
+        if($product->get($data["sku"])) {
+            $error = "duplicated sku, please enter a unique one!";
+            $this->view("add-product", ["error" => $error]);
+        }else{
+            $product->store($data);
+            Response::redirect("/");
+        }
+        
     }
 
     /**
